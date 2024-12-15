@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.studentproject.student_project.LoadCourseInfoFromFileViewController">
+   <children>
+      <Button layoutX="23.0" layoutY="30.0" mnemonicParsing="false" onAction="#loadCourseFromTxtFileOnAction" prefHeight="26.0" prefWidth="553.0" text="Load Course from &quot;CourseInfo.txt&quot;" />
+      <Button layoutX="24.0" layoutY="211.0" mnemonicParsing="false" onAction="#loadCourseFromBinFileOnAction" prefHeight="26.0" prefWidth="553.0" text="Load Course from &quot;CourseInfo.bin&quot;" />
+      <TableView fx:id="courseInfoTableView1" layoutX="24.0" layoutY="72.0" prefHeight="124.0" prefWidth="553.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="94.0" text="Course ID" />
+          <TableColumn fx:id="titleCol" prefWidth="268.0" text="Course Title" />
+            <TableColumn fx:id="creditsCol" prefWidth="79.0" text="Credits" />
+            <TableColumn fx:id="typeCol" prefWidth="110.0" text="Course Type" />
+        </columns>
+      </TableView>
+      <TableView fx:id="courseInfoTableView2" layoutX="24.0" layoutY="256.0" prefHeight="124.0" prefWidth="553.0">
+         <columns>
+            <TableColumn fx:id="idCol2" prefWidth="94.0" text="Course ID" />
+            <TableColumn fx:id="titleCol2" prefWidth="269.0" text="Course Title" />
+            <TableColumn fx:id="creditsCol2" prefWidth="78.0" text="Credits" />
+            <TableColumn fx:id="typeCol2" prefWidth="111.0" text="Course Type " />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

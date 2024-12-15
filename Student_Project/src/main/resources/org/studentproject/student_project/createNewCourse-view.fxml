@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.studentproject.student_project.CreateNewCourseViewController">
+   <children>
+      <TextField fx:id="courseIDTextField" layoutX="38.0" layoutY="38.0" prefHeight="26.0" prefWidth="205.0" promptText="Enter course id here" />
+      <TextField fx:id="titleTextField" layoutX="38.0" layoutY="75.0" prefHeight="26.0" prefWidth="205.0" promptText="Enter course title here" />
+      <Label layoutX="341.0" layoutY="43.0" text="How many credits?" />
+      <ComboBox fx:id="creditsComboBox" layoutX="341.0" layoutY="73.0" prefHeight="26.0" prefWidth="215.0" />
+      <Label layoutX="38.0" layoutY="115.0" text="Select Course Type" />
+      <ComboBox fx:id="typeComboBox" layoutX="38.0" layoutY="140.0" prefHeight="26.0" prefWidth="205.0" />
+      <Button layoutX="341.0" layoutY="141.0" mnemonicParsing="false" onAction="#addOnAction" prefHeight="26.0" prefWidth="215.0" text="Accumulate to courseList" />
+      <Button layoutX="38.0" layoutY="194.0" mnemonicParsing="false" onAction="#saveCourseListTextFileOnAction" prefHeight="26.0" prefWidth="519.0" text="Save courseList to &quot;CourseInfo.txt&quot;" />
+      <Button layoutX="39.0" layoutY="246.0" mnemonicParsing="false" onAction="#saveCourseListBinaryFileOnAction" prefHeight="26.0" prefWidth="519.0" text="save courseList to a binary file using Object Stream " />
+      <Button layoutX="39.0" layoutY="307.0" mnemonicParsing="false" onAction="#viewCourseInfoSamePageOnAction" text="Switch &quot;Load Course Info&quot; View on This Stage " />
+      <Button layoutX="358.0" layoutY="307.0" mnemonicParsing="false" onAction="#goToLoadCourseInfoOnAction" text="Go to &quot;Load Course Info&quot; View---&gt;" />
+   </children>
+</AnchorPane>
